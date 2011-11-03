@@ -1,3 +1,9 @@
+# revision 19709
+# category Package
+# catalog-ctan /macros/plain/contrib/font-change
+# catalog-date 2010-07-19 16:45:16 +0200
+# catalog-license other-free
+# catalog-version 2010.1
 Name:		texlive-font-change
 Version:	2010.1
 Release:	1
@@ -89,6 +95,7 @@ the present MiKTeX and TeX Live distributions.
 %doc %{_texmfdistdir}/doc/plain/font-change/README
 %doc %{_texmfdistdir}/doc/plain/font-change/default-amssymbols.tex
 %doc %{_texmfdistdir}/doc/plain/font-change/font-change.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -99,3 +106,5 @@ the present MiKTeX and TeX Live distributions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
