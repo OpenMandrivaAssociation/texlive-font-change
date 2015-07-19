@@ -6,7 +6,7 @@
 # catalog-version 2010.1
 Name:		texlive-font-change
 Version:	2010.1
-Release:	9
+Release:	10
 Summary:	Macros to Change Text and Math fonts in plain TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/plain/contrib/font-change
