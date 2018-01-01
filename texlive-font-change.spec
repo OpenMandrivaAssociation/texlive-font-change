@@ -1,12 +1,6 @@
-# revision 19709
-# category Package
-# catalog-ctan /macros/plain/contrib/font-change
-# catalog-date 2010-07-19 16:45:16 +0200
-# catalog-license other-free
-# catalog-version 2010.1
 Name:		texlive-font-change
-Version:	2010.1
-Release:	10
+Version:	2015.2
+Release:	1
 Summary:	Macros to Change Text and Math fonts in plain TeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/plain/contrib/font-change
@@ -37,55 +31,8 @@ the present MiKTeX and TeX Live distributions.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/plain/font-change/font-change.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antp_euler.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antt-condensed-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antt-condensed-medium.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antt-condensed.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antt-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antt-medium.tex
-%{_texmfdistdir}/tex/plain/font-change/font_antt.tex
-%{_texmfdistdir}/tex/plain/font-change/font_arev.tex
-%{_texmfdistdir}/tex/plain/font-change/font_artemisia_euler.tex
-%{_texmfdistdir}/tex/plain/font-change/font_bera_concrete.tex
-%{_texmfdistdir}/tex/plain/font-change/font_bera_euler.tex
-%{_texmfdistdir}/tex/plain/font-change/font_bera_fnc.tex
-%{_texmfdistdir}/tex/plain/font-change/font_bookman.tex
-%{_texmfdistdir}/tex/plain/font-change/font_century.tex
-%{_texmfdistdir}/tex/plain/font-change/font_charter.tex
-%{_texmfdistdir}/tex/plain/font-change/font_cm.tex
-%{_texmfdistdir}/tex/plain/font-change/font_cmbright.tex
-%{_texmfdistdir}/tex/plain/font-change/font_concrete.tex
-%{_texmfdistdir}/tex/plain/font-change/font_epigrafica_euler.tex
-%{_texmfdistdir}/tex/plain/font-change/font_epigrafica_palatino.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-bold.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-condensed-bold.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-condensed-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-condensed-medium.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-condensed.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona-medium.tex
-%{_texmfdistdir}/tex/plain/font-change/font_iwona.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kp-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kp.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-bold.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-condensed-bold.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-condensed-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-condensed-medium.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-condensed.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-light.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier-medium.tex
-%{_texmfdistdir}/tex/plain/font-change/font_kurier.tex
-%{_texmfdistdir}/tex/plain/font-change/font_libertine_kp.tex
-%{_texmfdistdir}/tex/plain/font-change/font_libertine_palatino.tex
-%{_texmfdistdir}/tex/plain/font-change/font_libertine_times.tex
-%{_texmfdistdir}/tex/plain/font-change/font_pagella.tex
-%{_texmfdistdir}/tex/plain/font-change/font_palatino.tex
-%{_texmfdistdir}/tex/plain/font-change/font_times.tex
-%{_texmfdistdir}/tex/plain/font-change/font_utopia.tex
-%doc %{_texmfdistdir}/doc/plain/font-change/README
-%doc %{_texmfdistdir}/doc/plain/font-change/default-amssymbols.tex
-%doc %{_texmfdistdir}/doc/plain/font-change/font-change.pdf
+%{_texmfdistdir}/tex/plain/font-change
+%doc %{_texmfdistdir}/doc/plain/font-change
 
 #-----------------------------------------------------------------------
 %prep
@@ -96,17 +43,3 @@ the present MiKTeX and TeX Live distributions.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2010.1-2
-+ Revision: 752035
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2010.1-1
-+ Revision: 718481
-- texlive-font-change
-- texlive-font-change
-- texlive-font-change
-- texlive-font-change
-
