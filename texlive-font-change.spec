@@ -3,7 +3,7 @@ Version:	40403
 Release:	2
 Summary:	Macros to Change Text and Math fonts in plain TeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/plain/contrib/font-change
+URL:		https://www.ctan.org/tex-archive/macros/plain/contrib/font-change
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/font-change.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/font-change.doc.r%{version}.tar.xz
